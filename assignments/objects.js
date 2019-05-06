@@ -68,7 +68,7 @@ console.log(antoinetta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-kennan.speak = function speak() {
+kennan.speak = function () {
   return `Hello, my name is ${this.name}`
 };
 console.log(kennan.speak());
@@ -91,21 +91,21 @@ console.log(antoinetta.multiplyNums(3,4));
 const parent = {
   "name": "Susan",
   "age": 70,
-  "speak": function speak() { 
+  "speak": function () { 
     return `My name is ${this.name}`
   },
 
   child: {
     "name": "George",
     "age": 50,
-    "speak": function speak() {
+    "speak": function () {
       return `My name is ${this.name}`
     },
 
     grandchild: {
       "name": "Sam",
       "age": 30,
-      "speak": function speak() {
+      "speak": function () {
         return `My name is ${this.name}`
       },
     }
